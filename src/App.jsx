@@ -12,7 +12,6 @@ class App extends React.Component {
       students: [],
       grades: {}
     };
-
     this.handleButtonClicked = this.handleButtonClicked.bind(this);
     this.addAssignment = this.addAssignment.bind(this);
     /*Uncomment the line below to bind the method*/
@@ -68,16 +67,16 @@ addStudent(studentName) {
 
     /* Change below to render students*/
 
-    /*if (this.state.buttonClicked === "students") {
+    if (this.state.buttonClicked === "students") {
       tabChoice = (
         <List
-          placeholder="Add Assignment..." 
-          currList={this.state.assignments}
-          addFunction={this.addAssignment}
+          placeholder="Add Student..." 
+          currList={this.state.students}
+          addFunction={this.addStudent}
           title="Student Roster"
         />
       );
-    }*/
+    }
 
     /* Uncomment lines below to render grades*/
     /*if (this.state.buttonClicked === "grades") {
